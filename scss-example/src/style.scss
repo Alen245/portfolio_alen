@@ -1,0 +1,48 @@
+$color_1: #fff;
+$color_2: #000;
+$font-family_1: sans-serif;
+$background-color_1: #112055;
+$background-color_2: #4f9d92;
+$darker-background-color_1:darken($background-color_1,20%);
+$lighter-background-color_1:lighten($background-color_1,20%);
+%box-shared:hover{box-shadow:none;}
+.box__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+	font-family: $font-family_1;
+}
+.box-primary {
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+	background-color: $background-color_1;
+	color: $color_1;
+  @extend %box-shared;
+  
+}
+.box-primary-lighter {
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+  background-color:$lighter-background-color_1;
+  @extend %box-shared;
+}
+.box-primary-darker {
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+  background-color:$darker-background-color_1;
+color: $color_1;
+  @extend %box-shared;
+}
+.box-secondary {
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+	background-color: $background-color_2;
+	color: $color_2;
+  @extend %box-shared;
+}
+
