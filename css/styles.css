@@ -135,6 +135,7 @@ body {
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
+    margin: 10px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     transition: 0.2s opacity;
